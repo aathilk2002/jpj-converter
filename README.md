@@ -1,4 +1,4 @@
-# jpj-converter
+# JPJ-converter
 
 Contributing Guidelines
 The repository is structured language-wise i.e. algorithms in a certain language go in a specific folder.
