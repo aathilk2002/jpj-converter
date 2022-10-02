@@ -9,16 +9,6 @@ label1 = tk.Label(root, text='File Converter', bg='lightsteelblue2')
 label1.config(font=('helvetica', 20))
 canvas1.create_window(150, 60, window=label1)
 im1 = None  # variable to store path of image
-
-
-canvas1.create_window(150, 130, window=browseButton_JPG)
-    '''Function to get image location and open it with pillow'''
-    global im1
-    canvas1.create_window(150, 130, window=browseButton_JPG)
-    import_file_path = filedialog.askopenfilename()
-    im1 = Image.open(import_file_path)
-CREATE OR REPLACE TABLE taxirides.2015_fare_amount_predictions
-  AS
 SELECT * FROM ML.PREDICT(MODEL taxirides.fare_model,(
   SELECT * FROM taxirides.report_prediction_data)
 )
@@ -30,7 +20,7 @@ figure = 'white'
 browseButton_JPG = tk.Button(text="      Import JPEG File     ", command=getJPG,
                              bg=background_color, fg=figure, font=font_style)   # Browse button
 canvas1.create_window(150, 130, window=browseButton_JPG)
-
+https://github.com/aathilk2002/jpj-converter
 
 def convertToPNG():
     '''Function to change file extenstion to png and save it to User's prefered location '''
@@ -40,7 +30,7 @@ def convertToPNG():
     else:canvas1.create_window(150, 130, window=browseButton_JPG)
         CREATE OR REPLACE TABLE taxirides.2015_fare_amount_predictions
   AS
-SELECT * FROM ML.PREDICT(MODEL taxirides.fare_model,(
+SELECT * FROM ML.PREDICT
   SELECT * FROM taxirides.report_prediction_data)
 )
 
